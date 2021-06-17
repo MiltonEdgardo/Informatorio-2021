@@ -1,0 +1,7 @@
+Armando Esteban,Quito,12-01-1989,42500.10
+Armando,Paredes,21-04-1975,56789.17
+Benito,Camelo,01-06-1997,32000.30
+Dolores,Fuertes,19-07-1991,49230.00
+Elena,Nito,12-05-1988,66700.13
+Inés,Esario,05-10-1987,62470.05
+Zacarias,Flores Del Campo,31-08-1983,58600.10

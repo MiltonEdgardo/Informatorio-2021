@@ -48,16 +48,18 @@ public class Empleado {
 
     @Override
     public String toString() {
-        return this.getNombre()+" "+this.getApellido();
+        return "Nombre y Apellido: " + this.getNombre() + " " + this.getApellido() + " - " 
+                + "Salario: " + this.getSueldo() + " - "
+                + "Fecha de Nacimiento: " + this.getFechaNacimiento();
     }
 
-    public int getEdad(){
+    public int getEdad() {
         LocalDate dia = LocalDate.now();
-        int edad = dia.getYear() - this.fechaNacimiento.getYear();
+        int edad = dia.getYear() - getFechaNacimiento().getYear();
         
-        if(dia.getMonthValue() < fechaNacimiento.getMonthValue()) {
+        if(dia.getMonthValue() < getFechaNacimiento().getMonthValue()) {
             edad = edad - 1;    
-        } else if((dia.getMonthValue() == fechaNacimiento.getMonth().getValue()) && (dia.getDayOfMonth() > this.fechaNacimiento.getDayOfMonth())) {
+        } else if((dia.getMonthValue() == getFechaNacimiento().getMonth().getValue()) && (dia.getDayOfMonth() > getFechaNacimiento().getDayOfMonth())) {
             edad = edad - 1;    
         }
     
